@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1d100都道府県</title>
+    <style>
+        .main{
+            text-align: center;
+            margin-top: 100px;
+        }
+        input{
+            font-size: 1.3rem;
+            width: 200px;
+            height: 100px;
+        }
+        .area{
+            text-align: center;
+        }
+        h1{
+            font-size: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="button" value="今回は何都道府県？？" id="btn" onclick="btnclick()">
+        <div id="area"></div>
+    </div>
+
+<script>
+const area = document.getElementById("area");
+
+
+let tdfk = ["都","道","府","県","都道","都府","都県","道府","道県","府県","都道府","都道県","都府県","道府県","都道府県","ヶ国"];
+/* const num1 = Math.floor(Math.random() * 101);
+const num2 = Math.floor(Math.random() * 15);
+
+console.log(num1);
+console.log(tdfk[num2]);
+
+let text = `${num1}${tdfk[num2]}`;
+console.log(text);
+
+document.write(`<h1 class="area">${num1}${tdfk[num2]}</h1>`); */
+
+function btnclick(){
+    const num3 = Math.floor(Math.random() * 101);
+    const num4 = Math.floor(Math.random() * 16);
+    let text2 = "<h1>";
+    text2 += `${num3}`;
+    text2 += `${tdfk[num4]}`;
+    text2 += "</h1>";
+    console.log(num3);
+    console.log(tdfk[num4]);
+    area.innerHTML = text2;
+
+    // alert("test");
+}
+
+</script>
+
+</body>
+</html>
