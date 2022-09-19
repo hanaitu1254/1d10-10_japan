@@ -36,19 +36,15 @@ let tdfk = ["都","道","府","県","都道","都府","都県","道府","道県"
 function btnclick(){
     const num1 = Math.floor(Math.random() * 10) + 1;
     let numR = 10 ** num1;
-    const num3 = Math.floor(Math.random() * numR);
-    // const num3 = Math.floor(Math.random() * 101);
-    // const num3 = Math.floor(Math.random() * 10000000000);
-    const num4 = Math.floor(Math.random() * 16);
+    const num2 = Math.floor(Math.random() * numR);
+    const num3 = Math.floor(Math.random() * 16);
     let text2 = "<h1>";
-    text2 += `${num3}`;
-    text2 += `${tdfk[num4]}`;
+    text2 += `${num2.toLocaleString()}`;
+    text2 += `${tdfk[num3]}`;
     text2 += "</h1>";
-    console.log(num3);
-    console.log(tdfk[num4]);
+    console.log(num2);
+    console.log(tdfk[num3]);
     area.innerHTML = text2;
-
-    // alert("test");
 }
 
 </script>
